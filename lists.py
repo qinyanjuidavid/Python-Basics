@@ -45,3 +45,36 @@ new_list[-1].append(try_list2)
 print(new_list)
 #Searching For Values In a list
 a_list=['a','b','new','mpilgrim','new']
+print(a_list.count('new'))
+print("new" in a_list)
+print(a_list.index('new'))
+print(a_list[4])
+#Removing Items From a List
+a_list=['a','b','new','mpilgrim','new']
+print(a_list[1])
+print(a_list.index('b'))
+del a_list[1]
+print(a_list)
+a_list.remove('new')
+print(a_list)
+a_list=["a","b","new","mpilgrim","new"]
+print(a_list)
+a_list.pop(1)
+print(a_list)
+
+#A List in a Boolean Context
+def is_it_true(anything):
+    """
+
+    :param anything:
+    :return:
+    """
+    if anything:
+        print('Yes, it\'s True')
+    else:
+        print("no, it\'s False.")
+if __name__ =="__main__":
+    is_it_true([])
+    is_it_true(['a'])
+    is_it_true([0])
+    is_it_true([False])
