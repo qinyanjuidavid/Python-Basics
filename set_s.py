@@ -47,3 +47,21 @@ try:
     # a_set.remove(21) Trying to remove a value that does not exsist raise an error
 except ValueError:
     print(a_set)
+a_set.pop()
+print(a_set)
+# Common set operations
+a_set={2,4,5,6,7 ,8,9}
+print(a_set)
+print(2 in a_set)
+a_setb={2,8,7,9,10,"C"}
+print(a_set.union(a_setb))
+print(a_set.intersection(a_setb))
+print(a_set.difference(a_setb))
+print(a_set.symmetric_difference(a_setb))
+
+
+
+
+
+
+
