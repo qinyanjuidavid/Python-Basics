@@ -58,6 +58,33 @@ print(a_set.union(a_setb))
 print(a_set.intersection(a_setb))
 print(a_set.difference(a_setb))
 print(a_set.symmetric_difference(a_setb))
+#Sets in a boolean Context
+def is_it_true(anything):
+    if anything:
+        print("yes, it\'s true")
+    else:
+        print("not it\'s False.")
+if __name__=="__main__":
+    is_it_true(set())
+    is_it_true({"a"})
+    is_it_true({False})
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
