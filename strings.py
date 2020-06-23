@@ -56,3 +56,6 @@ print(a_string.index("a"))
 print(a_string.index("s"))
 print(a_string[6])
 print(a_string.count("a"))
+print(a_string.find("ends"))
+
+print(a_string)
