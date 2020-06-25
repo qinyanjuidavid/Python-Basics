@@ -96,30 +96,41 @@ while num1<100:
     print("While",num1)
     num1+=1
     
+num1=11
+numbers=[11,33,55,39,55,75,37,21,23,41,13]
+for num in numbers:
+    if num==num1:
+        print("Number found in list")
+        break
+else:
+    print("Number not found in list")
+#Continue Statement
+    
+for letters in "Python":
+    if letters =="h":
+        continue
+    print(f"Current letter: {letters}")
+print("Good Bye")
 
-        
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+var=10
+while var>0:
+    var-=1
+    if var == 5:
+        continue
+    print("Current variable value:",var)
+print("Good Bye!")
+#Pass Statement
+for letter in "Python":
+    if letter =="h":
+        pass
+        print("This is pass block")
+    print("Current letterz",letter)
+    
+print("Good Bye!")
+#Iterators and Generators
+list=[2,1,2,3,4,5]
+it=iter(list)
+print(next(it))
 
 
 
