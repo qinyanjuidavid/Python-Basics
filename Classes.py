@@ -11,15 +11,4 @@ class Fib:
             raise StopIteration
         self.a,self.b=self.b,self.a+self.b
         return fib
-class Fib:
-    def __init__(self,a):
-        self.a=a
-    def OutPutFib(self):
-        self.a=20
-        print(self.a)
 
-if __name__=="__main__":
-    fib=Fib
-    fib.OutPutFib()
-
-# 176pg

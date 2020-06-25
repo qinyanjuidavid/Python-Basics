@@ -22,3 +22,39 @@ if chardet:
     print("Import Availble")
 else:
     print("Import not Available.")
+print("Hello Python!")
+
+print(8,end="\n")
+print("this is for separation","key",sep="%")
+print("My name is","Day Qinyanjui",sep=": ")
+print("I love Coding.", "I don\'t like movies.","I am hoping in God that one day i ll be a senior software engineer.",sep="\n",end="\n")
+#Python uses indentations
+if True:
+    print("True")
+else:
+    print("False")
+    
+if True:
+    print("Answer")
+    print("True")
+else:
+    print("Answer")
+    print("False")
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
