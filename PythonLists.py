@@ -49,6 +49,61 @@ print(type(atuple))
 aList=list(atuple)
 print(aList)
 print(type(aList))
+#In built List  methods
+#Append() This method adds an object into an existing list
+list1=["C++","Python","Java"]
+print(list1)
+list1.append("C#")
+print(list1)
+#count()
+aList=[123,"xyz","zara","abc",123]
+print(aList.count(123))
+#extends()
+#It appends a list on  another list
+myList=["Physics","Mathematics","Chemistry"]
+print(myList)
+newList=list(range(10))
+print(newList)
+newList=[1,2,3,4,5,6]
+myList.extend(newList)
+print(myList)
+#index()
+myList=["Python","C#","Java","C++"]
+print(myList)
+myList.insert(2,"Cobol")
+print(myList)
+newSub=["Mathematics","Biology","Chemistry","Physics","English"]
+print(newSub)
+newSub.pop(-1)
+print(newSub)
+newSub.append("Kiswahili")
+print(newSub)
+newSub.remove("Kiswahili")
+print(newSub)
+#Reverse
+newSub.reverse()
+print(newSub)
+myList=["C++","Java","Python","Cobol"]
+print(myList)
+myList.sort()
+print(myList)
+myList.sort(reverse=True)
+print(myList)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
