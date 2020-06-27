@@ -132,6 +132,12 @@ print(name)
 #split()
 myStr="this is my string example"
 print(myStr.split("i",1))
+#isdecimal()
+#this in built function checks whether the string consists of decimals characters only
+myStr="That is not your name"
+print(myStr.isdecimal())
+newStr="1256"
+print(newStr.isdecimal())
 
 
 
