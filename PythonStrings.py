@@ -80,6 +80,90 @@ print(newStr.islower())
 #Checks whether all the letter in a string are upper cased"
 print(myStr.isupper())
 print(newStr.isupper())
+#isnumeric()
+#It checks whether the string is made of numerical characters
+numStr="123564"
+print(numStr.isnumeric())
+newStr="I Dont know what is my talent"
+print(newStr.isnumeric())#Incase of letters
+#isspace
+#This function checks whether the string consists of whitespce
+name="I am Day Qinyanjui"
+print(name.isspace())#Incase of Strings it returns False
+mySpace="       "
+print(mySpace.isspace())
+#isTitle
+myTitle="This Is A Title"
+print(myTitle.istitle())
+myStr="This is a simple string"
+print(myStr.istitle())
+#join()
+myStr=("I","Am","Diving","into","Python")
+seq="%"
+print(seq.join(myStr))
+start="254"
+# phone=eval(input("Enter Phone number"))
+phone="0700215667"
+print(start.join(phone))
+#len()
+myStr="this is a string example...wow!"
+print(len(myStr))
+#lower()
+myStr="I love printing"
+print(myStr.lower())
+#upper()
+myStr.upper()
+print(myStr)
+#lstrip
+#The stripped letters are at the bigging
+myStr="     this is a string example"
+print(myStr.	lstrip())
+myHash="########This is my hash #####"
+print(myHash.lstrip("#"))
+# max() returns the maximum alphabet
+myStr="lfjejz"
+print(max(myStr))
+#min() Returns the minimum alphabet
+print(min(myStr))
+name="David Qinyanjui"
+print(name.replace("David","Day"))
+name=name+" Njau"
+print(name)
+#split()
+myStr="this is my string example"
+print(myStr.split("i",1))
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
