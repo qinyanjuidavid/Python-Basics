@@ -1,4 +1,6 @@
 #228
+import os
+os.chdir("/Users/david/PycharmProjects/Mastering/FilesIO/")
 if __name__=="__main__":
     a=5
     if 1<=a<=20:
