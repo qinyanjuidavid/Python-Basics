@@ -113,6 +113,49 @@ details=div.read()
 print(details)
 div.close()
 #File positions
+pos=open("position.txt","w")
+pos.write("Python is a great language,It was created by Guido van Roussum")
+pos.close()
+# pos=open("position.txt","r+")
+# print(pos.read())
+# check=pos.tell()#It returns the length of the file
+# print(check)
+# # check=pos.seek(0)
+# pos=pos.read()
+# # print(check)
+# pos.close()
+#Renaming Files
+Test=open("test.txt","w")
+Test.write("This is for renaming files")
+Test.close()
+import os
+try:
+    os.rename("test.txt","test2.txt")
+except:
+    print("File already renamed")
+#Deleting Files
+delTest=open("delTest.txt","w")
+delTest.write("This file was deleted")
+delTest.close()
+import os
+os.remove("delTest.txt")
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
