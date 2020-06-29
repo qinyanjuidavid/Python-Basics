@@ -102,6 +102,73 @@ if __name__=="__main__":
     del pt1
     del pt2
     del pt3
+#Class Inheritance
+#Normally the child class inherits the attributes of its parent class
+class Parent:
+    def __init__(self,name,age):
+        self.name=name
+        self.age=age
+    def displayDetails(self):
+        print(f"Name: {self.name}\nAge: {self.age}")
+if __name__=="__main__":
+    emp1=Parent("day",23)
+    emp1.displayDetails()
+class Child(Parent):
+    def __init__(self,name,age,salary,department):
+        Parent.__init__(self,name,age)
+        self.salary=salary
+        self.department=department
+    def displayInfor(self):
+        print(f"Salary: {self.salary}\nDepartment: {self.department}")
+if __name__=="__main__":
+    inf1=Child("Day",23,20000,"IT")
+    inf1.displayInfor()
+    inf1.displayDetails()
+#Class Inheritance Trial I
+class Employee:
+    def __init__(self,name,age,department,salary):
+        self.name=name
+        self.age=age
+        self.department=department
+        self.salary=salary
+    def employeeDetails(self):
+        print(f"Name: {self.name}.\nAge: {self.age}\nDepartment: {self.department}")
+class Salary(Employee):
+    def __init__(self,taxRate,commision,name,age,department,salary):
+        Employee.__init__(self,name,age,department,salary)
+        self.taxRate=taxRate
+        self.commision=commision
+    def SalaryDetails(self):
+        taxableIncome=self.salary+self.commision
+        tax=taxableIncome*self.taxRate
+        totalSalary=self.salary-tax
+        print(f"Name: {self.name}\nAge: {self.age}\nDepartment: {self.department}\nTaxable Income:{taxableIncome}\nTax: {tax}\nSalary:{totalSalary}\n")
+        
+if __name__=="__main__":
+    emp1=Salary(0.04,5000,"John Doe",35,"IT Department",320000)
+    emp1.SalaryDetails()
+    emp2=Salary(0.04,6000,"JaneDoe",32,"Sales Department",109000)
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
 
 
 
