@@ -147,9 +147,79 @@ class Salary(Employee):
 if __name__=="__main__":
     emp1=Salary(0.04,5000,"John Doe",35,"IT Department",320000)
     emp1.SalaryDetails()
-    emp2=Salary(0.04,6000,"JaneDoe",32,"Sales Department",109000)
+    emp2=Salary(0.04,6000,"Jane Doe",32,"Sales Department",109000)
+#Trial
+class Measurements:
+    def __init__(self,length,width,height):
+        self.length=length
+        self.height=height
+        self.width=width
+    def displayMeasurements(self):
+        print(self.length,self.width,self.height)
+if __name__=="__main__":
+    meas1=Measurements(20,10,30)
+#     meas1.displayMeasurements()
     
-    
+class Volume:
+    def __init__(self,length,width,height):
+        Measurements.__init__(self, length,width,height)
+    def findVolume(self):
+        volume=self.length*self.width*self.height
+        print(volume)
+        print(Measurements.displayMeasurements(self))
+if __name__=="__main__":
+    vol1=Volume(20,10,30)
+    vol1.findVolume()
+        
+#Data Hiding __variable (Encapsulation)
+class Employee:
+    __empCount=0
+    def __init__(self,name,age):
+        self.name=name
+        self.age=age
+        Employee.__empCount+=1
+    def employeeDetails(self):
+        print(f"Employee: {Employee.__empCount}\nName: {self.name}\nAge: {self.age}")
+if __name__=="__main__":
+    emp1=Employee("John Doe",32)
+    emp1.employeeDetails()
+    emp2=Employee("Jane Doe",35)
+    emp2.employeeDetails()
+class Measurements:
+    def __init__(self,length,width,height):
+        self.length=length
+        self.width=width
+        self.height=height
+    def displayMeasurements(self):
+        print(f"Length: {self.length}\nWidth: {self.width}\nHeight: {self.height}")
+    def Volume(self):
+        __volume=self.length*self.width*self.height
+        print(f"Volume: {__volume}")
+
+if __name__=="__main__":
+    meas1=Measurements(20,10,30)
+    meas1.displayMeasurements()
+    meas1.Volume()
+                 
+                 
+                 
+                 
+                 
+                 
+                 
+                 
+                 
+                 
+                 
+                 
+                 
+                 
+                 
+                 
+                 
+                 
+                 
+        
     
     
     

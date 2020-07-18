@@ -1,0 +1,1 @@
+# CGI stands for common gateway interface
